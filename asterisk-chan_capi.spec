@@ -1,4 +1,5 @@
 Summary:	Asterisk ISDN CAPI channel driver
+Summary(pl):	Sterownik kana³u CAPI ISDN dla Asteriska
 Name:		asterisk-chan_capi
 Version:	0.5.4
 Release:	0.1
@@ -6,7 +7,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/chan-capi/chan_capi-cm-%{version}.tar.gz
 # Source0-md5:	a7a9c0f90395909ee06528f17fc608d2
-URL:		http://sourceforge.net/projects/chan-capi
+URL:		http://sourceforge.net/projects/chan-capi/
 BuildRequires:	asterisk-devel
 BuildRequires:	capi-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -14,6 +15,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 ISDN CAPI Channel driver (chan_capi) for the Asterisk Open Source VOIP
 Platform.
+
+%description -l pl
+Sterownik kana³u CAPI ISDN (chan_capi) dla Asteriska - platformy VOIP
+o otwartych ¼ród³ach.
 
 %prep
 %setup -q -n chan_capi-%{version}
