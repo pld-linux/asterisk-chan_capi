@@ -2,7 +2,7 @@ Summary:	Asterisk ISDN CAPI channel driver
 Summary(pl):	Sterownik kana³u CAPI ISDN dla Asteriska
 Name:		asterisk-chan_capi
 Version:	0.7.1
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.chan-capi.org/chan-capi/chan_capi-%{version}.tar.gz
@@ -30,10 +30,7 @@ o otwartych ¼ród³ach.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/lib/asterisk/modules
-
-%{__make} install \
-	INSTALL_PREFIX=$RPM_BUILD_ROOT
+install -D chan_capi.so $RPM_BUILD_ROOT%{_libdir}/asterisk/modules/chan_misdn.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README capi.conf
-/usr/lib/asterisk/modules/*
+%{_libdir}/asterisk/modules/*
