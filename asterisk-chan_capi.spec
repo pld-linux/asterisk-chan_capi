@@ -1,3 +1,4 @@
+# TODO: optflags
 Summary:	Asterisk ISDN CAPI channel driver
 Summary(pl):	Sterownik kana³u CAPI ISDN dla Asteriska
 Name:		asterisk-chan_capi
@@ -38,4 +39,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README capi.conf
-%{_libdir}/asterisk/modules/*
+%attr(755,root,root) %{_libdir}/asterisk/modules/chan_misdn.so
