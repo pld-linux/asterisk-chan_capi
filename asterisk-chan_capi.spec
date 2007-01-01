@@ -31,7 +31,7 @@ o otwartych ¼ród³ach.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -D chan_capi.so $RPM_BUILD_ROOT%{_libdir}/asterisk/modules/chan_misdn.so
+install -D chan_capi.so $RPM_BUILD_ROOT%{_libdir}/asterisk/modules/chan_capi.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
