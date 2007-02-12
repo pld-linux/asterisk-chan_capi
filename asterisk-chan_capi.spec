@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	Asterisk ISDN CAPI channel driver
-Summary(pl.UTF-8):   Sterownik kanału CAPI ISDN dla Asteriska
+Summary(pl.UTF-8):	Sterownik kanału CAPI ISDN dla Asteriska
 Name:		asterisk-chan_capi
 Version:	0.7.1
 Release:	1
